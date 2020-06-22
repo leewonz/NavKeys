@@ -2,6 +2,7 @@
 ; Free to use, modify, or redistribute
 
 state := 0
+Gosub ToggleState
 
 Capslock & LShift::
     Gosub ToggleState
@@ -21,6 +22,7 @@ return
 */::SendInput, {blind}{End}
 *o::SendInput, {blind}{BS}
 *p::SendInput, {blind}{Del}
+*u::SendInput, {blind}{Esc}
 *g::SendInput, {blind}{RButton}
 *h::SendInput, {blind}{LButton}
 *b::SendInput, {blind}{MButton}
@@ -42,6 +44,7 @@ if(state == 0) {
     Hotkey, */, On
     Hotkey, *o, On
     Hotkey, *p, On
+    Hotkey, *u, On
     Hotkey, *g, On
     Hotkey, *h, On
     Hotkey, *b, On
@@ -61,6 +64,7 @@ if(state == 0) {
     Hotkey, */, Off
     Hotkey, *o, Off
     Hotkey, *p, Off
+    Hotkey, *u, Off
     Hotkey, *g, Off
     Hotkey, *h, Off
     Hotkey, *b, Off

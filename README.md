@@ -24,6 +24,7 @@ Reach navigation keys without your hand leaving the home row.
 | End | / |
 | BkSp | O |
 | Del | P |
+| Esc | U |
 | RMB | G |
 | LMB | H |
 | MMB | B |
